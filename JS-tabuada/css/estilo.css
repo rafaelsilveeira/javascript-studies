@@ -1,0 +1,128 @@
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+clear: both;
+}
+.clearfix {
+*zoom: 1;
+}
+/*todos os elementos agora levarão em conta apenas a largura e altura determinada, sem somar a este valor a borda e o padding.*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+  
+/****CORPO DA PÁGINA****/
+body{
+    /*Determina a largura máxima do conteúdo (desktop)*/
+    min-width: 360px;
+    max-width: 1128px;
+    margin: 0 auto;
+
+    background-color: #eaeaea;
+
+    /*Padronizar o tamanho da fonte de referência
+    Fonte padrão dos navegadores, 16px em média. 62,5% = 10px*/
+    font: normal 62.5% Calibri; 
+}  
+
+/*TÍTULO*/
+.caixa {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+}
+
+/*TEXTO E RESULTADO*/
+section{
+    background: #FFF;
+    border-radius: 1em;
+    padding: 1.5em;
+    min-width: 35em;
+    max-width: 63em;
+    margin: auto;
+    margin-top: 2.5em;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.288);
+}
+
+.insert{
+    width: 40%;
+    margin: 0;
+    display: inline-block;
+    float: left;
+    font-size: 1.6em;
+}
+/*div do botão*/
+.txtnum{
+    width: 90px;
+    margin: 0;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: none;
+    border: 1px solid #324474;
+    padding: 2px 4px;
+}
+.container_botao{
+    width: 22%;
+    display: inline-flex;
+    text-align: center;
+}
+.botao{
+    background-color: #324474;
+    color: #FFF;
+    font-size: small;
+    padding: 0;
+    border: 0;
+    border-radius: 20px;
+    float: left;
+    height: 21.5px;
+}
+span{
+    display: block;
+    height: inherit;
+    margin: 3.5px 15px;
+}
+
+/*ÁREA DE RESULTADO*/
+#resultado{
+    margin-top: 10px;
+}
+select{
+    border-radius: 2px;
+    padding: 5px;
+    width: 200px;
+}
+option{
+    text-align: center;
+    padding: 5px;
+}
+
+/*estilo de cores alternadas no select*/
+option.tabpar{background-color: rgb(243, 243, 213);}
+option.tabimpar{ background-color: rgb(223, 224, 243);}
+/*fim estilo de cores alternadas no select*/
+
+/*Estilo da barra de rolagem*/
+::-webkit-scrollbar-track {
+    background-color: #FFF;
+    border: none;
+    border-radius: 0 1px 1px 0;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #dad7d7;
+    border-radius: 5px;
+}
+
+/*Rodapé*/
+footer{
+    color: black;
+    text-align: center;
+    font-style: italic;
+}

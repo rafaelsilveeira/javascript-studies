@@ -1,0 +1,147 @@
+
+img,{
+  max-width: 100%;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/*todos os elementos agora levarão em conta apenas a largura e altura determinada, sem somar a este valor a borda e o padding.*/
+*, *:before, *:after {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/****CORPO DA PÁGINA****/
+body{
+    /*Determina a largura máxima do conteúdo (desktop)*/
+    min-width: 360px;
+    max-width: 1128px;
+    margin: 0 auto;
+  
+    background-color: #FDE4AE;
+
+    /*Padronizar o tamanho da fonte de referência
+    Fonte padrão dos navegadores, 16px em média. 62,5% = 10px*/
+    font: normal 62.5% Calibri; 
+}
+
+/*TÍTULO*/
+.caixa {
+  position: relative;
+  top: 15.5%;
+  text-align: center;
+  color: #324474;
+}
+
+/*TEXTO E TABELA*/
+section{
+    background: #FFF;
+    border-radius: 1em;
+    padding: 1.5em;
+    min-width: 35em;
+    max-width: 63em;
+    margin: auto;
+    margin-top: 2.5em;
+    box-shadow: 0.5em 0.5em 1em rgba(0, 0, 0, 0.288);
+}
+
+footer{
+    color: #000;
+    text-align: center;
+    font-style: italic;
+}
+
+h1{
+  margin: auto;
+  font-size: 3.5em;
+}
+h4{
+  margin: auto;
+  font-size: 2em;
+  font-weight: lighter;  
+}
+
+/*Caixa de preenchimento*/
+#entrada{
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 0px 10px 55px;
+  margin-bottom: 15px;
+  font-size: 2em;
+}
+input{
+    width: 15%;
+    border-radius: 4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: none;
+    border: 1px solid #324474;
+    padding: 2px 4px;
+}
+::-webkit-input-placeholder {/*Cor do placeholder*/
+  color: rgba(50, 68, 116, 0.228);
+} 
+.botao{
+  background-color: #324474;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  width: 20%;  
+  float: left;  
+}
+#resultado{
+  float: ;
+  text-align: center;
+  vertical-align: middle;
+  color: #000;
+  padding: 4px 25px 30px;
+}
+
+ /****TABELA IMC****/
+ .table-calc {
+  width: 100%;
+  max-width: 600px;
+  font-size: small;
+}
+/*Caixa de título da tabela*/
+.table-calc thead tr td{
+  background: #324474;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: large;
+}
+/*Linha de cabeçalho da tabela*/
+.table-calc tbody tr.table-calc-blue td{
+  color: #324474;
+  font-size: large;
+  font-weight: bold;
+}
+/*Linhas da tabela*/
+.table-calc tbody tr{
+  border-bottom: 1px solid #707070;
+  background: #fff;
+}
+/*Conteúdo de cada linha da tabela*/
+.table-calc tbody tr td{
+  color: #707070;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dee2e7;
+}
+/*Classe para destaque dinâmico na tabela após o cálculo*/
+.table-calc tbody tr.result_calc td{
+  transition: .8s;
+  background-color: #99A2BA;
+  color: #FFF;
+} 
