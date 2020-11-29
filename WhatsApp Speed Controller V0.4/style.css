@@ -1,0 +1,17 @@
+#speedControlButton{
+    border: none;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 2px 3px;
+}
+
+.scb_off{
+    background-color: transparent;
+    color: gray;
+}
+
+.scb_on{
+    background-color: #1b9a59;
+    color: #ededed;
+}
